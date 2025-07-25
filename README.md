@@ -1,6 +1,4 @@
 
----
-
 ## Getting Started | 快速开始
 
 ### Supported | 已支持
@@ -17,7 +15,6 @@
 
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
-cd python/pan_module
 pip install -r requirements.txt
 ```
 
