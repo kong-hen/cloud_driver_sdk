@@ -23,8 +23,7 @@ pip install -r requirements.txt
 
 ### Usage Example | 使用示例
 
-Quark | 夸克网盘
-[quark_tests.py](./test/quark_tests.py)
+Quark | 夸克网盘  [quark_tests.py](./test/quark_tests.py)
 
 ---
 
