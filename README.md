@@ -44,5 +44,7 @@ Feel free to submit issues or pull requests for new features, bug fixes, or docu
 
 ## Acknowledgements | 鸣谢
 
+[openList](https://github.com/OpenListTeam/OpenList)
+
 - Thanks to all contributors and open-source projects that inspired this repository.  
   感谢所有贡献者及为本项目提供灵感的开源项目。
