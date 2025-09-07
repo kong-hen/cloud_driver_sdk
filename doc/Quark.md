@@ -263,7 +263,35 @@ status, result = quark_upload.upload_file(
 
 ---
 
-## 9. 打印输出
+## 9. 下载文件
+### 9.1 创建下载实例
+
+```python
+from Quark import QuarkDownManager
+quark_down = QuarkDownManager(session=QuarkSession)
+```
+
+### 9.2 获取下载链接
+```python
+fid_list = ["078d0433bd65406e83c43538a36f8ba8"]
+status, result = quark_down.get_download_url(fid_list=fid_list)
+# 返回示例：
+# 说明：下载文件需要携带cookie
+# True {
+#     "file": {
+#         "fid": "078d0433bd65406e83c43538a36f8ba8",
+#         "file_name": "爱德华的小说 - 蒋蒋、朱贺.flac",
+#         "size": 28384894,
+#         "format_type": "audio/x-flac",
+#         "download_url": "https://dl-pc-zb-cf.pds.quark.cn/..."
+#     },
+#     "cookie": "cookie字符串"
+# }
+```
+
+
+
+## 10. 打印输出
 
 所有接口返回均为 `(status, result)`，可直接打印：
 
@@ -274,7 +302,7 @@ print(status, json.dumps(result, indent=4))
 
 ---
 
-## 10. 其他说明
+## 11. 其他说明
 
 - 各接口参数请参考注释及返回示例。
 - 任务型操作（如移动、删除、转存、分享等）返回 `task_id` 后，可用任务管理接口查询进度。
