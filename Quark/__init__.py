@@ -4,6 +4,7 @@ from .share import QuarkShareManager
 from .upload import QuarkUploadManager
 from .task import QuarkTaskManager
 from .save import QuarkSaveManager
+from .down import QuarkDownManager
 from .session import QuarkSession
 
 __all__ = [
@@ -14,4 +15,5 @@ __all__ = [
     "QuarkUploadManager",
     "QuarkTaskManager",
     "QuarkSaveManager",
+    "QuarkDownManager",
 ]
