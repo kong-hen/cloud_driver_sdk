@@ -1,6 +1,6 @@
 import yaml
 import json
-from Quark import QuarkSession,  QuarkFileManager, QuarkFolderManager, QuarkShareManager, QuarkUploadManager, QuarkTaskManager, QuarkSaveManager
+from Quark import QuarkSession,  QuarkFileManager, QuarkFolderManager, QuarkShareManager, QuarkUploadManager, QuarkTaskManager, QuarkSaveManager, QuarkDownManager
 
 # 读取配置文件
 with open("config.yaml", "r", encoding="utf-8") as f:
@@ -304,6 +304,32 @@ True {
 finish: 是否完成上传
 fid: 文件ID
 """
+
+
+
+
+# 创建文件下载实例
+quark_down = QuarkDownManager(session=QuarkSession)
+
+# 获取下载链接
+fid_list = ["078d0433bd65406e83c43538a36f8ba8"]
+status, result = quark_down.get_download_url(fid_list=fid_list)
+# 返回示例：
+"""
+True {
+    "file": {
+        "fid": "078d0433bd65406e83c43538a36f8ba8",
+        "file_name": "爱德华的小说 - 蒋蒋、朱贺.flac",
+        "size": 28384894,
+        "format_type": "audio/x-flac",
+        "download_url": "https://dl-pc-zb-cf.pds.quark.cn/..."
+    },
+    "cookie": "cookie字符串"
+}
+"""
+
+
+
 
 
 # 打印输出
