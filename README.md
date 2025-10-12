@@ -1,35 +1,37 @@
 
-## Getting Started | 快速开始
+## 快速开始
 
-### Supported | 已支持
+### 已支持
 
 - Quark | 夸克网盘
 - Uc | UC网盘
 - Lanzou | 蓝奏云
 
-### Prerequisites | 依赖环境
+### 依赖环境
 
 - Python 3.7+
 - Required dependencies (see [requirements.txt](./requirements.txt))  
   所需依赖请见 requirements.txt
 
-### Installation | 安装
+### 安装
 
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 pip install -r requirements.txt
 ```
 
-### Usage Document | 使用文档
+### 使用文档
 
 Quark | 夸克网盘  [Quark.md](./doc/Quark.md)
+
 Uc | UC网盘  [Uc.md](./doc/Uc.md)
+
 Lanzou | 蓝奏云  [Lanzou.md](./doc/Lanzou.md)
 
 
 ---
 
-## Testing | 测试
+## 测试
 
 ```bash
 python quark_test.py
@@ -39,24 +41,21 @@ python lanzou_test.py
 
 ---
 
-## Contributing | 贡献
+## 贡献
 
-Contributions are welcome!  
 欢迎各类贡献！
 
-Feel free to submit issues or pull requests for new features, bug fixes, or documentation improvements.  
 欢迎提交 Issue 或 Pull Request，完善功能、修复 Bug 或补充文档。
 
 ---
 
-## Acknowledgements | 鸣谢
+## 鸣谢
 
 [openList](https://github.com/OpenListTeam/OpenList)
 
-- Thanks to all contributors and open-source projects that inspired this repository.  
-  感谢所有贡献者及为本项目提供灵感的开源项目。
+- 感谢所有贡献者及为本项目提供灵感的开源项目。
 
-## Contact Us | 联系我们
+## 联系我们
 
 [个人博客](https://www.khkj6.com)
 
