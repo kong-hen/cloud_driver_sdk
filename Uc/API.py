@@ -13,6 +13,9 @@ FILE_UPDATE_HASH = "/1/clouddrive/file/update/hash"
 FILE_UPLOAD_AUTH = "/1/clouddrive/file/upload/auth"
 FILE_UPLOAD_FINISH = "/1/clouddrive/file/upload/finish"
 
+# 文件下载
+FILE_DOWNLOAD = "/1/clouddrive/file/download"
+
 # 文件列表
 FILE_SORT = "/1/clouddrive/file/sort"
 
