@@ -4,6 +4,8 @@
 ### Supported | 已支持
 
 - Quark | 夸克网盘
+- Uc | UC网盘
+- Lanzou | 蓝奏云
 
 ### Prerequisites | 依赖环境
 
@@ -18,9 +20,12 @@ git clone https://github.com/your-username/your-repo-name.git
 pip install -r requirements.txt
 ```
 
-### Usage Example | 使用示例
+### Usage Document | 使用文档
 
-Quark | 夸克网盘  [quark_tests.py](./test/quark_tests.py)
+Quark | 夸克网盘  [Quark.md](./doc/Quark.md)
+Uc | UC网盘  [Uc.md](./doc/Uc.md)
+Lanzou | 蓝奏云  [Lanzou.md](./doc/Lanzou.md)
+
 
 ---
 
@@ -28,6 +33,8 @@ Quark | 夸克网盘  [quark_tests.py](./test/quark_tests.py)
 
 ```bash
 python quark_test.py
+python uc_test.py
+python lanzou_test.py
 ```
 
 ---

@@ -1,11 +1,9 @@
 import yaml
-import json
 from Quark import QuarkSession,  QuarkFileManager, QuarkFolderManager, QuarkShareManager, QuarkUploadManager, QuarkTaskManager, QuarkSaveManager, QuarkDownManager
 
 # 读取配置文件
 with open("config.yaml", "r", encoding="utf-8") as f:
     config = yaml.safe_load(f)
-
 quark_conf = config["quark"]
 
 # 创建夸克基础实例
@@ -333,4 +331,4 @@ True {
 
 
 # 打印输出
-print(status, json.dumps(result, indent=4))
+print(status, result)

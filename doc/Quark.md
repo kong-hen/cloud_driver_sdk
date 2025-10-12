@@ -17,8 +17,8 @@ from Quark import QuarkSession
 
 with open("config.yaml", "r", encoding="utf-8") as f:
     config = yaml.safe_load(f)
-
 quark_conf = config["quark"]
+
 QuarkSession = QuarkSession(cookie=quark_conf["cookie"])
 ```
 
@@ -296,8 +296,7 @@ status, result = quark_down.get_download_url(fid_list=fid_list)
 所有接口返回均为 `(status, result)`，可直接打印：
 
 ```python
-import json
-print(status, json.dumps(result, indent=4))
+print(status, result)
 ```
 
 ---
