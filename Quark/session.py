@@ -89,6 +89,11 @@ class QuarkSession:
         if not status:
             return False, resp
         if resp.get("success") is True and resp.get("code") == "OK":
-            return True, resp.get("data", {})
+            # 获取数据并添加cookie字段
+            data = resp.get("data", {})
+            # 将cookie字典转换为字符串格式
+            cookie_str = "; ".join([f"{k}={v}" for k, v in self.cookies.items()])
+            data["cookie"] = cookie_str
+            return True, data
         else:
             return False, resp
