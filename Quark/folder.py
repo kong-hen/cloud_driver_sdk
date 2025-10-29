@@ -32,5 +32,5 @@ class QuarkFolderManager:
         if not status:
             return False, resp
         if resp.get("code") == 0 and resp.get("status") == 200:
-            return True, resp
+            return True, resp.get("data", {})
         return False, resp
