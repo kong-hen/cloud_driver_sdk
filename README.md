@@ -5,6 +5,7 @@
 
 - Quark | 夸克网盘
 - Uc | UC网盘
+- Yun139 | 移动云盘
 - Lanzou | 蓝奏云
 
 ### 依赖环境
@@ -26,6 +27,8 @@ Quark | 夸克网盘  [Quark.md](./doc/Quark.md)
 
 Uc | UC网盘  [Uc.md](./doc/Uc.md)
 
+Yun139 | 移动云盘  [Yun139.md](./doc/Yun139.md)
+
 Lanzou | 蓝奏云  [Lanzou.md](./doc/Lanzou.md)
 
 
@@ -36,6 +39,7 @@ Lanzou | 蓝奏云  [Lanzou.md](./doc/Lanzou.md)
 ```bash
 python quark_test.py
 python uc_test.py
+python yun139_test.py
 python lanzou_test.py
 ```
 
